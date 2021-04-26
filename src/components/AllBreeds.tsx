@@ -72,7 +72,6 @@ function AllBreeds({ BreedData, fetchAllBreeds }: any) {
                 <td>{item.split(":")[1].split(",")[18]}</td>
                 <td>{item.split(":")[1].split(",")[19]}</td>
                 <td>{item.split(":")[1].split(",")[20]}</td>
-                <td>{item.split(":")[1].split(",")[21]}</td>
               </tr>
             );
           })}
