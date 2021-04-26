@@ -23,7 +23,7 @@ function FavoriteBreed({ BreedData, fetchRandomBreed }: any) {
             <th>Favorite Breed Details</th>
           </tr>
         </thead>
-        <tbody className="styled-table">
+        <tbody>
           <tr>
             <td>
               {BreedData.loading ? (
@@ -42,11 +42,10 @@ function FavoriteBreed({ BreedData, fetchRandomBreed }: any) {
             </td>
           </tr>
           <tr>
-            {" "}
             <td>
               {" Favorite Sub-breed Name :  " +
                 BreedData.toString().substring(30).split("/")[0]}
-            </td>{" "}
+            </td>
           </tr>
         </tbody>
       </table>

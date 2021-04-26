@@ -27,7 +27,7 @@ function DropDown({ breedNames, fetchAllBreedNames }: any) {
   }
 
   const handleFavoriteBreedClick = (): void => {
-    let selectedBreed = document.getElementsByClassName("formControl")[0]
+    let selectedBreed = document.getElementsByClassName("Dropdown-control")[0]
       .textContent;
     if (selectedBreed === "Select") {
       alert(

@@ -80,8 +80,8 @@ export const fetchAllBreeds = () => {
       .get("https://dog.ceo/api/breeds/list/all")
       .then((response) => {
         const breeds = response.data;
-        console.log("inAction");
-        console.log(response.data);
+        // console.log("inAction");
+        // console.log(response.data);
         dispatch(fetchAllBreedsSuccess(breeds));
       })
       .catch((error) => {
@@ -93,8 +93,8 @@ export const fetchAllBreeds = () => {
 
 export const fetchRandomBreed = (selected: any) => {
   return (dispatch: any) => {
-    console.log("selected");
-    console.log(selected);
+    // console.log("selected");
+    // console.log(selected);
     if (selected) {
       //in case favorite is alread selected by user
       dispatch(fetchRandomBreedsRequest); //Dispatch for random breed
@@ -113,8 +113,8 @@ export const fetchRandomBreed = (selected: any) => {
       dispatch(fetchRandomBreedsRequest); //Dispatch for random breed
       axios.get("https://dog.ceo/api/breeds/list/all").then((response) => {
         const Allbreeds = response.data;
-        console.log("Allbreeds");
-        console.log(Allbreeds);
+        // console.log("Allbreeds");
+        // console.log(Allbreeds);
 
         let breedList = [];
         for (var key in Allbreeds.message) {
@@ -156,8 +156,8 @@ export const fetchAllBreedNames = () => {
       .get("https://dog.ceo/api/breeds/list/all")
       .then((response) => {
         const Allbreeds = response.data;
-        console.log("Allbreeds");
-        console.log(Allbreeds);
+        // console.log("Allbreeds");
+        // console.log(Allbreeds);
 
         let breedList = [];
         for (var key in Allbreeds.message) {
